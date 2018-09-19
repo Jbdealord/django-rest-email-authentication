@@ -28,8 +28,7 @@ $ sudo docker-compose up
 
    **1. For development purpose**
 
-    After the registration, the email message will be shown up in the console and you will be able to verfy it.
-    In this case you don't have to use real emails.
+    After the registration, the email message will be shown up in the console and you will be able to verify your email. In       this case you don't have to use real emails.
 
     **2. For purpose of productation mode:**
 

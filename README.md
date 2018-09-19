@@ -32,7 +32,7 @@ $ sudo docker-compose up
 
     **2. For purpose of productation mode:**
 
-     * Change console backend to SMPT backend in the ```settings.py```: 
+     * Change EmailBackend to SMPT mode in the ```settings.py```: 
 
        ```EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'```
 

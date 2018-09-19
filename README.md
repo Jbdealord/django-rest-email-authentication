@@ -53,6 +53,3 @@ $ sudo docker-compose up
        EMAIL_HOST_PASSWORD = 'password'
         ```
       
-# Demo:
-
-![Alt Text](https://media.giphy.com/media/pylZHgShH2ItYgNSil/giphy.gif)

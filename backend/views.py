@@ -15,7 +15,7 @@ def django_rest_auth_null():
 class VerifyEmailView(APIView):
 
     '''
-    API class which offer browsable endpoint and furthermore  easiliy usable in frontendself.
+    API class which offer browsable endpoint and furthermore  easiliy usable in frontend.
     https://github.com/Tivix/django-rest-auth/issues/292#issuecomment-355099829
     '''
 

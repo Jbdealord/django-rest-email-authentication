@@ -16,7 +16,7 @@ step which based on ``` django-allauth```  and ``` django-rest-auth``` modules.
 
 ```
 $ git clone https://github.com/istvanhajdu/django-react-authentication.git
-$ cd django-react-authentication
+$ cd django-rest-email-authentication
 $ sudo docker-compose build 
 $ sudo docker-compose up
 ```

@@ -26,8 +26,6 @@ SECRET_KEY = '714c1f$8n1trvkc!nq4(l_#=iu7fckgwi!x8if7(+u4uue61ig'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-ACCOUNT_ADAPTER = 'backend.adapter.DefaultAccountAdapterCustom'
-URL_FRONT = 'http://localhost:3000/'
 
 # Application definition
 
@@ -50,32 +48,34 @@ INSTALLED_APPS = [
     'backend'
 ]
 
+# Pass email verification url to frontend server
+
+ACCOUNT_ADAPTER = 'backend.adapter.DefaultAccountAdapterCustom'
+URL_FRONT = 'http://localhost:3000/'
+
+# Set email verified requirements during login
+# https://django-allauth.readthedocs.io/en/latest/configuration.html
+
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-'''
-EMAIL_USE_SSL =
-EMAIL_HOST =
-EMAIL_PORT =
-EMAIL_HOST_USER =
-EMAIL_HOST_PASSWORD =
-'''
+# Print otut the verification message to the console (for testing purpose)
+# https://docs.djangoproject.com/en/2.1/topics/email/
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ROOT_URLCONF = 'project.urls'
 
+# Define custom model
 
 AUTH_USER_MODEL = 'users.CustomUserModel'
 
-
 SITE_ID = 1
 
+# Use JWT (JSON Web Token during authentication)
+
 REST_USE_JWT = True
-
-
-#ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

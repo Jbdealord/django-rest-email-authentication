@@ -39,12 +39,12 @@ $ sudo docker-compose up
 
      * Add these lines to the ```settings.py```:
 
-       - *In SSL connection channel cases:*
+       - *In SSL connection channel case:*
        ```
        EMAIL_USE_SSL = True
        EMAIL_PORT = 465
        ```
-       - *In TLS connection channel cases:*
+       - *In TLS connection channel case:*
        ```
        EMAIL_USE_TLS = True
        EMAIL_HOST = 'mail.test.hu'
